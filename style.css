@@ -1,0 +1,1301 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav .navigations{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 10rem;
+    background-color: rgb(244, 6, 6);
+    color: #fff;
+    /* position: fixed; */
+    width: 100%;
+}
+
+nav .navigations .nav-links ul, nav .navigations .requirement-links ul{
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav .navigations .nav-links ul li a, nav .navigations .requirement-links ul li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all .6s ease;
+}
+
+nav .navigations .nav-links ul li a:hover, nav .navigations .requirement-links ul li a:hover{
+    color: black;
+}
+
+ nav .navigations .requirement-links .join {
+    position: relative;
+ }
+
+nav .navigations .requirement-links .dropdown {
+    display: none;
+    position: absolute;
+}
+
+
+nav .navigations .requirement-links .join:hover .dropdown {
+    /* margin: .1rem 1rem; */
+    display: block; /* Show the dropdown when hovering over the parent */
+    position: absolute; /* Position it relative to the parent */
+    background-color: red; /* Background color */
+    min-width: 150px; /* Minimum width of the dropdown */
+    z-index: 1; 
+    padding: 10px;
+
+}
+
+
+
+nav .navigations .requirement-links .dropdown li {
+    display: block; /* Makes the entire area clickable */
+    padding: 7px;
+    text-decoration: none; /* Remove underline */
+    color: rgb(255, 254, 254); /* Link color */
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #1379d2;
+    margin-bottom: 5px;
+    /* text-align: center; */
+}
+
+nav .navigations .requirement-links .dropdown .sign{
+    background-color: #16dc3b;
+}
+
+nav .navigations .requirement-links .dropdown li:hover {
+    background-color: #e705f8; /* Change background on hover */
+}
+
+
+
+nav .navigations .menu{
+    display: none;
+}
+
+
+nav .navigations .menu  .menu-btn {
+    padding: .5rem 1rem;
+    background-color: #3fda18;
+    gap: 1rem;
+    border-radius: 10px;
+    
+}
+
+nav .navigations .menu  .menu-btn a,
+nav .navigations .menu  .menu-btn i{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+
+
+header .header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header-container .logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header-container .logo-container img{
+    width: 5rem;
+}
+
+header .header-container .logo-container h1{
+    margin-left: .5rem;
+    font-size: 2.2rem;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header .header-container{
+    padding: 0rem 2rem;
+
+}
+
+header .header-container .search-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+header .header-container .search-bar .input-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    border-radius: 20px;
+}
+
+header .header-container .search-bar .input-group select{
+    padding: .6rem;
+    border: none;
+    outline: none;
+    border-radius: 20px 0 0 20px;
+    
+}
+header .header-container .search-bar .input-group input{
+    padding: .6rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    font-size: .9rem;
+}
+header .header-container .search-bar .input-group button{
+    padding: .7rem;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background-color: red;
+    color: #fff;
+    transition: all .5s ease;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+   
+}
+
+header .header-container .search-bar .input-group button:hover{
+    background-color: green;
+}
+
+header .header-container .search-bar .support{
+    background-color: red;
+    padding: .4rem 1.5rem;
+    border-radius: 0 20px 0 20px;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+header .header-container .search-bar .support:hover{
+    background-color: blueviolet;
+}
+
+header .header-container .search-bar .support a{
+    color: #fff;
+}
+
+header .header-container .search-bar .support i{
+    font-size: .7rem;
+    background-color: rgb(18, 231, 53);
+    padding: .4rem;
+    border-radius: 50%;
+    
+}
+
+section .industry-container .industries ul{
+    padding: .7rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: rgba(34, 34, 238, 0.77);
+    color: #fff;
+}
+
+section .industry-container .industries ul li{
+    transition: all .5s ease;
+}
+
+section .industry-container .industries ul li:hover{
+    transform: scale(1.1);
+}
+
+section .industry-container .industries ul li a{
+    color: #fff;
+    transition: all .5s ease;
+}
+
+section .industry-container .industries ul li a:hover{
+    color: rgb(0, 0, 0);
+    
+}
+
+section .home-container {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+section .home-container .animate-background {
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    transition: all 1s ease;
+}
+
+section .home-container .animate-background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .slide-container{    
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+section .slide-container .container{
+    border: 1px solid rgb(120, 137, 151);
+    width: 100%;
+    transition: all .5s ease;
+}
+
+section .slide-container .container:hover {
+    transform: scale(.9);
+    background-color: rgb(182, 206, 226);
+}
+
+section .slide-container .container .img-section img{
+    width: 100%;
+    /* padding: .8rem; */
+    height: 35vh;
+    object-fit: cover;
+}
+
+section .slide-container .container .img-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
+section .slide-container .container .img-content h4{
+    font-size: .9rem;
+}
+
+section .slide-container .container .img-content i{
+    background-color: rgb(202, 159, 159);
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+section .slide-container .container:hover .img-content i{
+    background-color: red;
+    color: #fff;
+}
+
+section .products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* align-items: flex-start; */
+}
+
+section .products h1{
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin: 2rem;
+    padding: 0 5rem ;
+    border-bottom: 3px solid red;
+}
+
+section .products .products-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 5rem;
+    gap: 2rem;
+    
+}
+
+section .products .products-container .product-view{
+    width: 50%;
+}
+
+section .products .products-container .product-view img{
+    width: 100%;
+    height: 75vh;
+}
+
+section .products .products-container .product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+section .products .products-container .product .product-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+section .products .products-container .product .product-list .product-list-item{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    gap: 1rem;
+    text-align: center;
+    /* width: 100%; */
+    width: 10rem;
+    transition: all .5s ease
+}
+
+section .products .products-container .product .product-list .product-list-item:hover{
+    transform: scale(.85);
+    background-color: rgb(148, 2, 153);
+    color: #fff;
+}
+
+section .products .products-container .product .product-list .product-list-item img{
+    width: 100%;
+    max-width: 11rem;
+    height: 7rem;
+
+}
+
+section .products .products-container .product .product-list .product-list-item h5{
+    padding: .2rem;
+    font-size: 11px;
+}
+
+section .form-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem 5rem;
+    background-color: rgb(41, 155, 232);
+    padding: 2rem
+}
+
+section .form-container .form-section{
+    background: linear-gradient(90deg, #ff5722, #e91e63);
+    color: white;
+    padding: 1.5rem;
+    max-width: 40%;
+
+}
+
+section .form-container .form-section h2{
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+section .form-container .form-section .form-group input,
+section .form-container .form-section .form-group select,
+section .form-container .form-section .form-group textarea{
+    padding: 0.6rem 1rem;
+    border: none;
+    margin-bottom: .5rem;
+    outline: none;
+}
+
+section .form-container .form-section .form-group select,
+section .form-container .form-section .form-group textarea,
+section .form-container .form-section .form-group button{
+    width: 100%;
+}
+
+section .form-container .form-content{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+section .form-container .form-map iframe{
+    width: 100%;
+    max-width: 60rem;
+    height: 50vh;
+}
+
+
+section .data-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(120, 0, 167);
+    margin: 2rem 5rem;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+section .data-container header{
+    color: #fff;
+    margin: 1rem;
+    text-align: center;
+    gap: 1rem;
+}
+
+section .data-container .table-containerr{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    background-color: aliceblue;
+    margin-top: 1rem;
+    /* padding: 2rem; */
+}
+
+section .data-container .table-containerr table{
+    width: 100%;
+}
+section .data-container .table-containerr table thead th{
+    text-align: left;
+    background-color: #ff5722;
+    padding: .5rem;
+    border-radius: 5px 5px 0 0;
+}
+section .data-container .table-containerr tbody tr td{
+    /* background-color: aqua; */
+    /* text-align: left; */
+    margin-top: 1.5rem;
+    padding: .5rem;
+    border-bottom: 1px dotted black;
+}
+
+section .data-container .table-containerr tbody tr td:hover{
+    background-color: #3fda18;
+    color: rgb(252, 252, 252);
+}
+
+.ads-container .Ads img{
+    margin-top: 3rem;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 10px;
+}
+
+.location-container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.location-container .locations {
+    margin: 5rem;
+}
+
+.location-container .locations .location-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem
+
+}
+
+
+.location-container .locations .location-img img{
+    width: 100%;
+    max-width: 310px;
+    height: 30vh;
+}
+
+.location-explore{
+    background-color: rgb(233, 229, 225);
+    transition: all .5s ease;
+}
+
+.location-explore:hover{
+    transform: translateY(13px);
+    background-color: cadetblue;
+    color: #fff;
+}
+
+.location-explore h5{
+    font-size: 1.1rem;
+    padding: .2rem .5rem;
+}
+
+.footers-container .footer {
+    width: 100%;
+    /* height: 50vh; */
+    padding:2rem 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: #fff;
+}
+
+.footers-container  .footer  .footer-image img{
+    width: 15rem;
+}
+
+/* .footer .footer-details{
+    padding: 2rem 5rem;
+    
+} */
+.footers-container .footer  .footer-details h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+.footers-container .footer  .footer-details h5{
+    margin-bottom: 5px;
+}
+
+.footers-container .footer  .footer-details ul li{
+    font-size: .8rem;
+    margin-bottom: 1rem;
+    color: antiquewhite;
+}
+
+.footers-container .footer  .footer-details ul li:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+.footers-container .footer  .footer-details .social {
+    display: flex;
+    gap: 10px;
+}
+
+.footers-container .footer  .footer-details .social a{
+    font-size: 1.1rem;
+    color: #3fda18;
+}
+
+.footers-container .footer  .footer-details .social a:hover{
+    color: #e91e63;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: #fff;
+    border-top: .1px solid rgb(235, 210, 210);
+    padding: 1rem;
+    /* margin-bottom: 1rem; */
+}
+
+.copyright h5{
+    font-weight: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.copyright span{
+    color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+/* ---------------------------Media Quarry ----------------------------- */
+
+@media (max-width: 990px){
+    body{
+        width: 100%;
+    }
+    nav .navigations {
+        display: none ;
+        /* background-color: #e9e61e; */
+    }
+    nav .menu{
+        display: inline;
+    }
+    header .header-container{
+        flex-direction: column;
+        width: 100%;
+        align-items: start;
+        gap: 0;
+    }
+    header .header-container .search-bar{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 500px;
+        gap: .5rem;
+        justify-content: space-between;
+    }
+
+    header .header-container .search-bar .input-group{
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+        
+    }
+
+    header .support{
+        width: 100%;
+        margin-bottom: .8rem;
+    }
+    section .industry-container .industries ul li a{
+        font-size: .8rem;
+    }
+    
+    section .home-container {
+        width: 100%;
+        height: 70vh;
+        margin-bottom: 0;
+    }
+
+    section .products .products-container{
+        /* width: 100%; */
+        padding: 1rem 2rem;
+    }
+    section .slide-container .container .img-section img {
+        width: 100%;
+        margin-top: 0;
+        height: 20vh;
+        object-fit: cover;
+    }
+    section .products .products-container .product-view img {
+        width: 100%;
+        height: 60vh;
+    }
+
+    section .products .products-container .product .product-list .product-list-item {
+        width: 100%;
+        height: 5rem;
+        margin-bottom: 2.5rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    section .products .products-container .product .product-list .product-list-item:hover{
+        background-color: rgb(148, 2, 153);
+
+    }
+
+    section .products .products-container .product .product-list .product-list-item img {
+        width: 100%;
+        max-width: 13rem;
+        height: 6rem;
+    }
+    section .form-container{
+        margin: 1rem 2rem;
+    }
+    section .form-container .form-section .form-group input, section .form-container .form-section .form-group select, section .form-container .form-section .form-group textarea {
+    width: 100%;
+    }
+    section .data-container {
+        margin: 1rem 2rem;
+    }
+    .location-container {
+        margin-top: -50px;
+    }
+    .footers-container .footer .footer-image img {
+        width: 10rem;
+    }
+    .footers-container .footer {
+        padding:  2rem;
+    }
+}
+    
+
+@media(max-width:450px){
+    header .header-container{
+        padding: .8rem;
+    }
+    header .header-container .logo-container h1{
+        font-size: 1.6rem;
+        
+    }
+    header .header-container .search-bar .input-group select{
+        padding:.6rem 0 ;
+    }
+    header .header-container .search-bar .input-group input{
+        width: 9.5rem;
+    }
+    header .header-container .search-bar .input-group button {
+        padding: .8rem ;
+    }
+    header .header-container .search-bar .input-group button span{
+        display: none;
+    }
+
+    section .industry-container .industries ul li a {
+        font-size: .4rem;
+    }
+    section .slide-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+    }
+    section .slide-container .container{
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    section .slide-container .container .img-section img{
+        width: 100%;
+        margin-top: 0;
+        height: 50%;
+        object-fit: cover;
+    }
+
+    section .home-container{
+        width: 100%;
+        height: 40vh;
+    }
+
+    section .home-container .animate-background img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    section .products h1{
+        font-size: 1.4rem;
+        padding: 0;
+        margin: 0;
+    }
+    section .products .products-container{
+        display: flex;
+        flex-direction: column;
+    }
+    section .products .products-container .product-view{
+        width: 100%;
+        /* height: 50vh; */
+    }
+    section .products .products-container .product-view img{
+        width: 100%;
+        height: 45vh;
+    }
+
+     section .products .products-container .product .product-list {
+        display: flex;
+        flex-wrap: wrap;
+     }
+
+    section .products .products-container .product .product-list .product-list-item{
+        width: 8.5rem;
+        height: 10rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    }
+
+    section .products .products-container .product .product-list .product-list-item img{
+        width: 100%;
+        /* max-width: ; */
+        height: 81%;
+        
+    }
+
+    section .form-container {
+        /* margin: 1rem 2rem; */
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    section .form-container .form-section {
+        max-width: 100%;
+        padding: 1rem;
+    }
+    section .form-container  .form-content span{
+        font-size: 1rem;
+    }
+    section .form-container  .form-content h2{
+        font-size: 1.5rem;
+        padding: 0;
+    }
+    section .form-container .form-map iframe{
+        width: 100%;
+        height: 40vh;
+    }
+    section .data-container {
+        font-size: 10px;
+        padding: 1rem;
+    }
+
+    section .data-container header {
+        margin: 0;
+    }
+    .footers-container .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .ads-container .Ads img {
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 1200px;
+        border-radius: 10px;
+        height: 10vh;
+    }
+
+    section .location-container .locations {
+        /* padding: 1rem; */
+    }
+
+    section .location-container .locations .location-img .location-explore{
+        width: 100%;
+        width: 260px;
+        height: 25vh;
+    }
+    section .location-container .locations .location-img .location-explore img{
+       width: 100%;
+       height: 80%;
+    }
+
+    
+    
+    
+}
+
+
+
+
+/* ----------------------------AGRICULTURAL CONTAINER------------------------------- */
+
+.agricultural-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin-top: 3rem;
+}
+
+.agricultural-container h2{
+    font-size: 1.8rem;
+}
+
+.agricultural-container .agricultural-products{
+    margin: 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+
+}
+
+.agricultural-container .agricultural-products .agricultural-product-list-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    gap: 1rem;
+    box-shadow: 1px 1px 20px 1px rgba(201, 193, 196, 0.73);
+    width: 420px;
+    transition: all .5s ease;
+}
+
+.agricultural-container .agricultural-products .agricultural-product-list-item:hover{
+    transform: scale(.9);
+    background: linear-gradient(90deg, rgba(240, 24, 240, 0.858) 18%, rgba(27, 54, 152, 0.953) 100%);
+    color: #fff;
+    /* background-color: rgb(85, 127, 164); */
+}
+
+.agricultural-container .agricultural-products .agricultural-product-list-item:hover .details a{
+    background-color:greenyellow;
+}
+
+.agricultural-container .agricultural-products .agricultural-product-list-item .image{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.agricultural-container .agricultural-products .agricultural-product-list-item img{
+    width: 9rem;
+    height: 16vh;
+}
+
+.agricultural-container .agricultural-products .agricultural-product-list-item .details{
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    
+}
+
+/* .agricultural-container .agricultural-products .agricultural-product-list-item .details h5{
+    font-size: .92rem;
+} */
+
+.agricultural-container .agricultural-products .agricultural-product-list-item .details p{
+    margin: .5rem 0;
+    font-size: .8rem;
+}
+
+.agricultural-container .agricultural-products .agricultural-product-list-item .details a{
+    background-color: #3fda187d;
+    padding: .1rem .5rem;
+    font-size: .8rem;
+}
+
+.agricultural-container .agricultural-products .agricultural-product-list-item .bookmark i{
+    font-size: 1.4rem;
+    margin-right: .5rem;
+
+}
+
+.agricultural-container .agricultural-products .agricultural-product-list-item .bookmark i:hover{
+    background-color: #000;
+    overflow: hidden;
+}
+
+
+/* ------------Agriculture Media quary------------------- */
+
+@media (max-width:450px){
+    .agricultural-container{
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .agricultural-container h2 {
+        font-size: 1.2rem;
+        margin-left: .5rem;
+    }
+    .agricultural-container .agricultural-products{
+        margin: 1rem;
+        padding: 0rem;
+    }
+    .agricultural-container .agricultural-products .agricultural-product-list-item{
+        width: 330px;
+    }
+    .agricultural-container .agricultural-products .agricultural-product-list-item img {
+        width: 7rem;
+        height: 13vh;
+    }
+    .agricultural-container .agricultural-products .agricultural-product-list-item .details h4{
+        font-size: .9rem;
+    }
+    .agricultural-container .agricultural-products .agricultural-product-list-item .bookmark i{
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+/* -------------------------------------REQUIREMENT CONTAINER -------------------------------- */
+
+section .requirement-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* margin: 1rem 5rem; */
+    /* background-color: rgb(41, 155, 232); */
+    background-image: url("https://wallpapercave.com/wp/wp4103018.jpg");
+    background-size: cover;
+    padding: 10rem;
+}
+
+section .requirement-container .requirement-section{
+    background: linear-gradient(90deg, #ff5722, #e91e63);
+    color: white;
+    padding: 1.5rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+section .requirement-container .requirement-section h2{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+section .requirement-container .requirement-section .form-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: .5rem;
+}
+
+section .requirement-container .requirement-section .form-group input,
+section .requirement-container .requirement-section .form-group select,
+section .requirement-container .requirement-section .form-group textarea,
+section .requirement-container .requirement-section .form-group button{
+    padding: .8rem 1.5rem;
+    border: none;
+    margin-bottom: .5rem;
+    outline: none;
+    width: 100%;
+}
+
+section .requirement-container .requirement-section .form-group button{
+    background-color: #3fda18;
+    font-weight: 700;
+}
+
+section .requirement-container .requirement-section .form-group button:hover{
+    background-color: #3f6e33;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+/* ----------------------------LOGIN CONTAINER-------------------------------- */
+
+section .login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    background-image: url("https://wallpaperaccess.com/full/754629.jpg");
+    background-size: cover;
+    text-align: center;
+}
+section .login  .form-section {
+    width: 100%;
+    max-width: 400px;
+    height: 550px;
+    background-color: #1b66de;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    flex-direction: column;
+  }
+  
+  section  .login .title {
+    text-align: center;
+    margin: 10px 0 30px 0;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  
+  section  .login .sub-title {
+    /* margin-top: 0px; */
+    margin-bottom: 15px;
+    font-size: 9px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  section  .login .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 15px;
+  }
+  
+  section  .login .input {
+    border-radius: 20px;
+    border: 1px solid #c0c0c0;
+    outline: 0 !important;
+    box-sizing: border-box;
+    padding: 12px 15px;
+  }
+  
+  section  .login .form-btn {
+    padding: 12px 15px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    border: 0 !important;
+    outline: 0 !important;
+    background: rgb(39, 5, 232);
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  section  .login .form-btn:active {
+    box-shadow: none;
+  }
+  
+  section  .login .sign-up-label {
+    margin: 0;
+    font-size: 11px;
+    font-weight: 700;
+    color: #171515;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  section  .login .sign-up-link {
+    margin-left: 5px;
+    font-size: 13px;
+    text-decoration: underline;
+    text-decoration-color: rgb(41, 37, 40);
+    color: rgb(49, 238, 11);
+    cursor: pointer;
+    font-weight: 700;
+  }
+  
+  section  .login .buttons-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 15px;
+  }
+  
+  section  .login .apple-login-button,
+      .google-login-button {
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 11px;
+    gap: 5px;
+  }
+  
+  section  .login .apple-login-button {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+  }
+  
+  section  .login .google-login-button {
+    color: white;
+    background-color: #cc0b92;
+  }
+  
+  section  .login .apple-icon,
+      .google-icon {
+    font-size: 18px;
+    margin-bottom: 1px;
+  }
+
+  /* ----------------------------------FREE LOGIN------------------------------------- */
+
+  section  .free-login{
+    text-align: center;
+    padding: 5rem;
+    background-image: url("https://images7.alphacoders.com/374/374296.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  section  .free-login h1{
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+  }
+
+  section  .free-login h1 span{
+    color: red;
+  }
+
+  section  .free-login-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  section  .free-login-container form{
+    padding:1rem 5rem;
+    width: 100%;
+    max-width: 700px;
+  }
+
+  section  .free-login-container .free-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: .8rem;
+  }
+
+  section  .free-login-container .free-details input, select{
+    padding: .3rem .5rem;
+    width: 100%;
+  }
+
+  section  .free-login-container .free-details-btn button{
+    padding: .6rem 2.5rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    background-color: #cc0b92;
+    color: #fff;
+  }
+
+  section  .free-login-container .free-details-btn button:hover{
+    background-color: green;
+  }
+
+
+  /* -----------------------INDUSTRIES CONTAINER------------------------- */
+
+  /* section .manufatures-n-suppliers{
+    
+  } */
+
+  section .manufatures-n-suppliers .manufatures-n-suppliers-container{
+    padding: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    background-image: url("https://hdqwalls.com/wallpapers/blurry-abstract.jpg");
+    background-size: cover;
+    /* background-color: #1379d2; */
+  }
+
+  section .manufatures-n-suppliers .manufatures-n-suppliers-container .manufatures-n-suppliers-context h1{
+    font-size: 3.2rem;
+    color: #fff;
+    gap: 0rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  section .manufatures-n-suppliers .manufatures-n-suppliers-container .manufatures-n-suppliers-context p{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+  }
+
+  section .manufatures-n-suppliers .manufatures-n-suppliers-container .manufatures-n-suppliers-context a{
+    padding:.5rem 1rem;
+    font-size: 1.2rem;
+    background-color: #16dc3b;
+    border-radius: 10px;
+    color: rgba(17, 17, 17, 0.77);
+    font-weight: 700;
+  }
+
+  section .manufatures-n-suppliers .manufatures-n-suppliers-container .manufatures-n-suppliers-context a:hover{
+    background-color: #d213c9;
+    color: white;
+  }
+
+  section .manufatures-n-suppliers .manufatures-n-suppliers-container .manufatures-n-suppliers-image img{
+    padding: 2rem;
+    width: 100%;
+    height: 80vh;
+  }
